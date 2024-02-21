@@ -3,6 +3,4 @@ project(LeetCode C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(LeetCode main.c
-        1768.c
-)
+add_executable(LeetCode main.c solutions/1768.c)

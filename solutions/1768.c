@@ -1,4 +1,4 @@
-#include "commonheader.h"
+#include "../commonheader.h"
 
 char *mergeAlternately(char *word1, char *word2) {
     int lenof1 = strlen(word1);
