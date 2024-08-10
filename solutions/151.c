@@ -13,7 +13,7 @@ char *reverseWords(char *s) {
     int i = 1;
 
     while (i < strlen(s) / 2) {
-        if ((temp = strtok(nullptr, " ")) == nullptr)
+        if ((temp = strtok(NULL, " ")) == NULL)
             break;
         words[i] = temp;
         i++;

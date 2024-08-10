@@ -3,7 +3,7 @@
 char *strrev(char *string) {
 
 }
-
+    
 char *gcdOfStrings(char *str1, char *str2) {
     int str1len = strlen(str1);
     int str2len = strlen(str2);
