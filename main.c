@@ -1,11 +1,13 @@
 #include "commonheader.h"
 
-bool increasingTriplet(int *nums, int numsSize);
+char *compress(char *chars, int charsSize);
 
 int main(int argc, char **argv)
 {
-    int array[] = {2, 1, 5, 0, 4, 30, -1, 1};
-    printf("%d\n", increasingTriplet(array, 8));
+    char string[] = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
+    compress(string, strlen(string));
+    printf("%s\n", string);
+    printf("done");
     return 0;
 }
 
