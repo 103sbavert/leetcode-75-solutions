@@ -1,13 +1,11 @@
 #include "commonheader.h"
 
-char *compress(char *chars, int charsSize);
+void moveZeroes(int *nums, int numsSize);
 
 int main(int argc, char **argv)
 {
-    char string[] = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
-    compress(string, strlen(string));
-    printf("%s\n", string);
-    printf("done");
+    int ints[] = {0, 0, 1};
+    moveZeroes(ints, 3);
     return 0;
 }
 
