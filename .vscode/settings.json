@@ -1,0 +1,12 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/sbavert/MEGA/LinuxStuff/CodeProjects/leetcode-75-solutions/.build/binary",
+            "binaryPath": "/home/sbavert/MEGA/LinuxStuff/CodeProjects/leetcode-75-solutions/.build/binary/a.out",
+            "binaryArgs": []
+        }
+    ],
+    "files.associations": {
+        "commonheader.h": "c"
+    }
+}

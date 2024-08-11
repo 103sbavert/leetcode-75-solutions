@@ -1,22 +1,24 @@
-FILE := 151.c
-
+FILE := 334.c
 
 SHELL := /usr/bin/bash
+BUILD_DIR := .build
 SOLUTIONS_DIR := solutions
-BINARY_DIR := binary
-OBJECTS_DIR := objects
+BINARY_DIR := $(BUILD_DIR)/binary
+OBJECTS_DIR := $(BUILD_DIR)/objects
 
-a.out: $(OBJECTS_DIR)/source.o $(OBJECTS_DIR)/main.o
-	mkdir -p $(BINARY_DIR)
+$(shell mkdir -p $(BUILD_DIR) && mkdir -p $(OBJECTS_DIR) && mkdir -p $(BINARY_DIR))
+
+all: $(OBJECTS_DIR)/source.o $(OBJECTS_DIR)/main.o
 	gcc $^ -o $(BINARY_DIR)/a.out
 
 $(OBJECTS_DIR)/main.o: main.c
-	mkdir -p $(OBJECTS_DIR)
 	gcc -c $^ -o $(OBJECTS_DIR)/main.o
 
 $(OBJECTS_DIR)/source.o: $(SOLUTIONS_DIR)/$(FILE)
-	mkdir -p $(OBJECTS_DIR)
 	gcc -c $< -o $(OBJECTS_DIR)/source.o
 
 clean:
-	rm -r binary/ objects/
+	rm -rf $(BUILD_DIR)/*
+
+launch:
+	$(BINARY_DIR)/a.out

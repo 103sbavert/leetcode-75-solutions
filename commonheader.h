@@ -7,5 +7,6 @@
 #include <string.h>
 #include <stdbool.h>
 #include <math.h>
+#include <limits.h>
 
 #endif //COMMON_HEADER
