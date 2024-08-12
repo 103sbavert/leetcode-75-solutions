@@ -1,11 +1,11 @@
 #include "commonheader.h"
 
-void moveZeroes(int *nums, int numsSize);
+int maxArea(int *height, int heightSize);
 
 int main(int argc, char **argv)
 {
-    int ints[] = {0, 0, 1};
-    moveZeroes(ints, 3);
+    int array[] = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+    printf("answer %d\n", maxArea(array, sizeof(array) / sizeof(int)));
     return 0;
 }
 
