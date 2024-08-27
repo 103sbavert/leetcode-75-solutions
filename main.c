@@ -1,12 +1,16 @@
 #include "commonheader.h"
 
-int maxArea(int *height, int heightSize);
+int maxOperations(int *nums, int numsSize, int k);
 
 int main(int argc, char **argv)
 {
-    int array[] = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-    printf("answer %d\n", maxArea(array, sizeof(array) / sizeof(int)));
-    return 0;
+
+    int nums[] = {1,2,3,4}; 
+    int n = 4;
+    int k = 5;
+
+    int value = maxOperations(nums, n, k);
+    printf("%d\n", value);
 }
 
 // 4 5 2 3 1 4 6 9

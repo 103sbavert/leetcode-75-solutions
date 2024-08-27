@@ -1,4 +1,4 @@
-FILE := 11.c
+FILE := 1679.c
 
 SHELL := /usr/bin/bash
 BUILD_DIR := .build
@@ -9,7 +9,7 @@ OBJECTS_DIR := $(BUILD_DIR)/objects
 $(shell mkdir -p $(BUILD_DIR) && mkdir -p $(OBJECTS_DIR) && mkdir -p $(BINARY_DIR))
 
 all: $(OBJECTS_DIR)/source.o $(OBJECTS_DIR)/main.o
-	gcc $^ -o $(BINARY_DIR)/a.out
+	gcc -fsanitize=address $^ -o $(BINARY_DIR)/a.out
 
 $(OBJECTS_DIR)/main.o: main.c
 	gcc -c $^ -o $(OBJECTS_DIR)/main.o
