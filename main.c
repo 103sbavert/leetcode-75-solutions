@@ -1,12 +1,10 @@
 #include "commonheader.h"
 
-double findMaxAverage(int *nums, int numsSize, int k);
+int maxVowels(char *s, int k);
 
 int main(int argc, char **argv) {
-  int nums[] = {0, 4, 0, 3, 2};
-  int k = 1;
-  double value = findMaxAverage(nums, 5, k);
-  printf("%f", value);
+  char *s = "abciiidef";
+  printf("%d", maxVowels(s, 3));
 }
 
 // 4 5 2 3 1 4 6 9
