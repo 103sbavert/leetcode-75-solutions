@@ -1,25 +1,16 @@
-#include <stdlib.h>
-#include <stdio.h>
+double findMaxAverage(int* nums, int numsSize, int k) {
+  int sum = 0;
+  int temp = 0;
+  while (temp < k) {
+    sum += nums[temp++];
+  }
 
-#define MIN(A, B) A < B ? A : B
+  int max = sum;
 
-int maxArea(int *height, int heightSize)
-{
-    int max = 0;
-    for (int i = 0, j = heightSize - 1; j >= i;)
-    {
+  for (int i = 1, j = k; j < numsSize; i++, j++) {
+    sum = sum + nums[j] - nums[i - 1];
+    if (sum > max) max = sum;
+  }
 
-        int currHeight = MIN(height[i], height[j]);
-        int currWidth = j - i;
-        int currArea = currHeight * currWidth;
-        if (currArea > max)
-            max = currArea;
-
-        if (height[j] > height[i])
-            i++;
-        else
-            j--;
-    }
-
-    return max;
+  return (double)max / (double)k;
 }

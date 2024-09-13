@@ -1,13 +1,12 @@
 #include "commonheader.h"
 
-int longestOnes(int *nums, int numsSize, int k);
+int longestSubarray(int *nums, int numsSize);
 
 int main(int argc, char **argv)
 {
-    int array[] = {1, 1, 1, 1, 0, 0, 0};
+    int array[] = {0, 1, 1, 1, 0, 1, 1, 0, 1};
     int size = sizeof(array) / sizeof(*array);
-    int k = 2;
-    printf("%d\n", longestOnes(array, size, k));
+    printf("%d\n", longestSubarray(array, size));
 }
 
 // 4 5 2 3 1 4 6 9
