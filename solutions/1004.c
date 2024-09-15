@@ -20,7 +20,6 @@ int longestOnes(int *nums, int numsSize, int k)
         }
 
         rightp++;
-        printf("leftp: %d, rightp: %d\n", leftp, rightp);
     }
 
     return rightp - leftp;
