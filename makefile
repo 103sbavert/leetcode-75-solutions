@@ -1,4 +1,4 @@
-FILE := 1493.c
+FILE := 724.c
 
 SHELL := /usr/bin/bash
 BUILD_DIR := .build

@@ -1,12 +1,11 @@
 #include "commonheader.h"
 
-int longestSubarray(int *nums, int numsSize);
+int pivotIndex(int *nums, int numsSize);
 
 int main(int argc, char **argv)
 {
-    int array[] = {0, 1, 1, 1, 0, 1, 1, 0, 1};
-    int size = sizeof(array) / sizeof(*array);
-    printf("%d\n", longestSubarray(array, size));
-}
 
-// 4 5 2 3 1 4 6 9
+    int array[] = {1,7,3,6,5,6};
+    printf("%d\n", pivotIndex(array, 6));
+}
+// 4 5 2 3 1 4 6 9 -fsanitize=address 

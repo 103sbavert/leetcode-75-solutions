@@ -9,4 +9,4 @@
 #include <math.h>
 #include <limits.h>
 
-#endif //COMMON_HEADER
+#endif
