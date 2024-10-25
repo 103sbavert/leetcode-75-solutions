@@ -1,13 +1,22 @@
 {
     "makefile.launchConfigurations": [
         {
-            "cwd": "/home/sbavert/MEGA/LinuxStuff/CodeProjects/leetcode-75-solutions/",
+            "cwd": "/home/sbavert/MEGA/LinuxStuff/CodeProjects/leetcode-75-solutions/.build/binary",
             "binaryPath": "/home/sbavert/MEGA/LinuxStuff/CodeProjects/leetcode-75-solutions/.build/binary/a.out",
-            "binaryArgs": [],
+            "binaryArgs": []
         }
     ],
     "files.associations": {
-        "commonheader.h": "c",
-        "stdlib.h": "c"
+        "*.tcc": "c",
+        "bitset": "c",
+        "chrono": "c",
+        "codecvt": "c",
+        "string_view": "c",
+        "algorithm": "c",
+        "random": "c",
+        "format": "c",
+        "istream": "c",
+        "limits": "c",
+        "numeric": "c"
     }
 }
